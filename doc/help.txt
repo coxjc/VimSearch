@@ -1,0 +1,15 @@
+
+VimSearch -- Another Vim Utility
+
+Search a simple query, receive simple results.
+
+The command returns 1-3 results, all from the Duck Duck Go API.
+
+Call the utility with :Search "<QUERY>".
+
+(Quotes must surround the query.)
+
+If no results are found, you will be informed.
+
+Thanks!
+
