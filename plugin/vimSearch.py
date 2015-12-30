@@ -34,7 +34,7 @@ def setResults(data, max):
         for x in range(max):
             results.append(data["RelatedTopics"][x]["Text"])
     except Exception:
-        results[0] = "Sorry, no results for this search query."
+        results.append("Sorry, no results for this query.")
     return results#Makes a list of strings of the results.
 
 def search(query):
