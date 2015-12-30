@@ -25,6 +25,9 @@ def verifyLength(data):
         parseTo = 3
     else: 
         parseTo = len(data["RelatedTopics"])
+        if parseTo == 0:
+            parseTo += 1
+        #it needs to be at least one in order to show the error 
     return parseTo #Set up to 3 results, but if there are less than three,
 #then set to such.
 
