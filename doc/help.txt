@@ -5,9 +5,9 @@ Search a simple query, receive simple results.
 
 The command returns 1-3 results, all from the Duck Duck Go API.
 
-Call the utility with :Search "<QUERY>".
+Call the utility with :Search <QUERY>.
 
-(Quotes must surround the query.)
+Quotes are not needed.
 
 If no results are found, you will be informed.
 
