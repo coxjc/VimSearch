@@ -30,8 +30,11 @@ def verifyLength(data):
 
 def setResults(data, max):
     results = []
-    for x in range(max):
-        results.append(data["RelatedTopics"][x]["Text"])
+    try:
+        for x in range(max):
+            results.append(data["RelatedTopics"][x]["Text"])
+    except Exception:
+        results[0] = "Sorry, no results for this search query."
     return results#Makes a list of strings of the results.
 
 def search(query):
