@@ -1,4 +1,4 @@
-function! Search(query)
+function! Search(arg)
     pyfile vimSearch.py
 endfunc
-command! Search call Search(query)
+command! Search call Search(arg)

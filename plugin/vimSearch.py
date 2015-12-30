@@ -5,7 +5,7 @@ try:
 except Exception:
     print("Error occurred while importing dependencies.")
 
-URL = ["http://api.duckduckgo.com/q=", "&format=json&t=VimSearch"]
+URL = ["http://api.duckduckgo.com/?q=", "&format=json&t=VimSearch"]
 
 def setUrl(query):
     URL.insert(1, query) 
@@ -35,13 +35,13 @@ def setResults(data, max):
     return results#Makes a list of strings of the results.
 
 def search(query):
-    url = setUrl(vim.eval(query)) 
+    #url = setUrl(vim.eval("a:arg")) 
+    url = setUrl(query)
     req = searchToData(url)
     jsonD = resultsToJson(req)
     results = setResults(jsonD, verifyLength(jsonD))
     for result in results:
-        print(result)
+         print(result)
     return
-
 if __name__ == "__main__":
-    search(vim.eval("query"))
+    search(vim.eval("a:arg")) 
