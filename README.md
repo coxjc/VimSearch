@@ -15,3 +15,7 @@ Call with:
 Enjoy the results! :)
 
 Fork & Play!
+
+Made with the help of Duck Duck Go. Thanks!!
+
+![alt tag](doc/DuckDuckGoLogo.png) 
