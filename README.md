@@ -6,7 +6,7 @@ A utility to search a basic query and receive a few concise, direct results, all
 
 Install with Vundle:
 
-Plugin 'SwagKingTenK/VimSearch'
+Plugin 'coxjc/VimSearch'
 
 Call with:
 
